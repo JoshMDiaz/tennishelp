@@ -7815,10 +7815,9 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
-html, h1, span, ul, .item-content {
+html, h1, span, ul, .item-content, .item {
   font-family: dosis;
-  font-weight: 100;
-  color: #515151; }
+  font-weight: 100; }
 
 img.logo {
   width: 50%;
@@ -7827,6 +7826,14 @@ img.logo {
 span {
   font-size: 1.3em; }
 
+.tabs {
+  border-top: 5px #b1b3b6 solid;
+  line-height: 45px; }
+
 .tab-item-active {
   color: #FFF;
   background-color: #b1b3b6; }
+
+.item, .item-divider {
+  background-color: #FFF;
+  color: #515151; }

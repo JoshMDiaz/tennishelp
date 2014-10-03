@@ -28,24 +28,33 @@ $dark:                            #515151 !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-html, h1, span, ul, .item-content{
-	font:{
-		family: dosis;
-		weight: 100;
-	}
-	color: $dark;
+html, h1, span, ul, .item-content, .item{
+  font:{
+    family: dosis;
+    weight: 100;
+  }
 }
 
 img.logo {
-	width: 50%;
-	margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 span{
-	font-size: 1.3em;
+  font-size: 1.3em;
+}
+
+.tabs{
+  border-top: 5px $light solid;
+  line-height: 45px;
 }
 
 .tab-item-active{
-	color: $stable;
-	background-color: $light;
+  color: $stable;
+  background-color: $light;
+}
+
+.item, .item-divider{
+  background-color: $stable;
+  color: $dark;
 }

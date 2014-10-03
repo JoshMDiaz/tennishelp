@@ -57,6 +57,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
+    .state('tab.results', {
+      url: '/results',
+      views: {
+        'tab-results': {
+          templateUrl: 'templates/tab-results.html',
+          controller: 'ResultsCtrl'
+        }
+      }
+    })
+
     .state('tab.friend-detail', {
       url: '/friend/:friendId',
       views: {
@@ -81,4 +92,3 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $urlRouterProvider.otherwise('/tab/dash');
 
 });
-

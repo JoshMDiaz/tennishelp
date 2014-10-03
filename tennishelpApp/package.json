@@ -1,7 +1,7 @@
 {
-  "name": "tabsstarter",
+  "name": "tennishelpapp",
   "version": "1.0.0",
-  "description": "tabsStarter: An Ionic project",
+  "description": "tennishelpApp: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
