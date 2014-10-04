@@ -28,7 +28,7 @@ $dark:                            #515151 !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-html, h1, span, ul, .item-content, .item{
+html, h1, span, ul, .item-content, .item, button{
   font:{
     family: dosis;
     weight: 100;
@@ -41,12 +41,12 @@ img.logo {
 }
 
 span{
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .tabs{
   border-top: 5px $light solid;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 .tab-item-active{
@@ -54,7 +54,65 @@ span{
   background-color: $light;
 }
 
+ion-content{
+  background: $stable;
+}
+
+.center{
+  text-align: center;
+}
+
+//Results / Stats
 .item, .item-divider{
   background-color: $stable;
   color: $dark;
+  padding:0;
+}
+
+.col{
+  padding: 10px 5px;
+}
+
+.col-67{
+  border-right: $light solid 1px;
+}
+
+.row{
+  padding: 0;
+}
+
+.opponent{
+  font:{
+    size: 2em;
+  }
+  color: $dark;
+  text-align: center;
+}
+
+.statScore{
+  font:{
+    size: 1.5em;
+  }
+  color: $positive;
+  text-align: center;
+}
+
+.statResult{
+  text-align: center;
+}
+
+.submit{
+  background-color: $dark;
+  color: $stable;
+  margin: 0 auto;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 2em;
+}
+
+
+//Home
+.homeImg{
+  width:75%;
 }
