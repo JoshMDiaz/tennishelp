@@ -7838,7 +7838,8 @@ ion-content {
   background: #FFF; }
 
 .center {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .item, .item-divider {
   background-color: #FFF;
@@ -7848,7 +7849,7 @@ ion-content {
 .col {
   padding: 10px 5px; }
 
-.col-67 {
+.col-67, .col-20 {
   border-right: #b1b3b6 solid 1px; }
 
 .row {
@@ -7856,18 +7857,13 @@ ion-content {
 
 .opponent {
   font-size: 2em;
-  color: #515151;
-  text-align: center; }
+  color: #515151; }
 
 .statScore {
   font-size: 1.5em;
-  color: #99c016;
-  text-align: center; }
+  color: #99c016; }
 
-.statResult {
-  text-align: center; }
-
-.submit {
+.submit, .undo {
   background-color: #515151;
   color: #FFF;
   margin: 0 auto;
@@ -7875,6 +7871,21 @@ ion-content {
   border: none;
   border-radius: 5px;
   font-size: 2em; }
+
+.undo {
+  background-color: #99c016;
+  margin: 0; }
+
+.icon.ion-gear-a {
+  font-size: 2em;
+  margin-right: 1em;
+  color: #515151; }
+
+.ion-ios7-plus-empty {
+  font-size: 10em;
+  margin: -70px 0 -50px 0;
+  background: none;
+  border: none; }
 
 .homeImg {
   width: 75%; }

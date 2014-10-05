@@ -60,6 +60,7 @@ ion-content{
 
 .center{
   text-align: center;
+  margin: 0 auto;
 }
 
 //Results / Stats
@@ -73,9 +74,10 @@ ion-content{
   padding: 10px 5px;
 }
 
-.col-67{
+.col-67, .col-20{
   border-right: $light solid 1px;
 }
+
 
 .row{
   padding: 0;
@@ -86,7 +88,6 @@ ion-content{
     size: 2em;
   }
   color: $dark;
-  text-align: center;
 }
 
 .statScore{
@@ -94,14 +95,13 @@ ion-content{
     size: 1.5em;
   }
   color: $positive;
-  text-align: center;
 }
 
 .statResult{
-  text-align: center;
+
 }
 
-.submit{
+.submit, .undo{
   background-color: $dark;
   color: $stable;
   margin: 0 auto;
@@ -111,6 +111,23 @@ ion-content{
   font-size: 2em;
 }
 
+.undo{
+  background-color: $positive;
+  margin: 0;
+}
+
+.icon.ion-gear-a {
+  font-size: 2em;
+  margin-right: 1em;
+  color: $dark;
+}
+
+.ion-ios7-plus-empty {
+  font-size: 10em;
+  margin: -70px 0 -50px 0;
+  background: none;
+  border: none;
+}
 
 //Home
 .homeImg{
