@@ -1,164 +1,122 @@
-<ion-view title="">
+<ion-view title="saved results">
   <ion-content class="padding">
 
       <div class="list card">
 
+        <ion-item ng-repeat="opponent in opponents" type="item-text-wrap" href="#/tab/results/{{opponent.id}}">
+          {{result}} v. {{opponent.name}}
+        </ion-item>
 
-        <div class="item">
+      <div class="item">
           <div class="row">
-              <div class="col opponent center">
-                v. david lopez
+              <div class="col col-67">
+                <span class="positive">win </span> v. <span> name</span>
+              </div>
+
+              <div class="col statResult center">
+                date
               </div>
           </div>
         </div>
 
         <div class="item">
-          <div class="row">
-            <div class="col statScore center">
-              6-3, 4-2
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
+
+                <div class="col statResult center">
+                  date
+                </div>
             </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                1st serve %
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                58%
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                aces
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                1
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                double faults
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                1
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                unforced errors
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                7
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                winnig % on 1st serve
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                81%
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                winnig % on 2nd serve
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                46%
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
 
         <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                winners (including serves)
-              </div>
+            <div class="row">
+                <div class="col col-67">
+                  <span class="positive">win </span> v. <span> name</span>
+                </div>
 
-              <div class="col statResult center">
-                8
-              </div>
+                <div class="col statResult center">
+                  date
+                </div>
+            </div>
           </div>
-        </div>
-
-        <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                receiving pts won
-              </div>
-
-              <div class="col statResult center">
-                57%
-              </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                break pt conversions
-              </div>
-
-              <div class="col statResult center">
-                O of 3 = O%
-              </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                net approaches
-              </div>
-
-              <div class="col statResult center">
-                7 of 8 = 88%
-              </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="row">
-              <div class="col col-67">
-                total pts won
-              </div>
-
-              <div class="col statResult center">
-                25
-              </div>
-          </div>
-        </div>
 
 
       </div><!--end list-->
-
-
-      <div class="row">
-        <button name="submit" class="submit">submit</button>
-      </div><!--end submit button-->
 
 
 

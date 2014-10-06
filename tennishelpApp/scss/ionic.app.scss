@@ -35,6 +35,10 @@ html, h1, span, ul, .item-content, .item, button{
   }
 }
 
+.bar .title{
+ font-size: 2em;
+}
+
 img.logo {
   width: 50%;
   margin: 0 auto;
@@ -116,17 +120,22 @@ ion-content{
   margin: 0;
 }
 
+.icon.ion-gear-a, .ion-ios7-plus-empty {
+  background: none;
+  border: none;
+  padding:0;
+}
+
 .icon.ion-gear-a {
   font-size: 2em;
-  margin-right: 1em;
-  color: $dark;
+  color: $light;
+  position: absolute;
+  bottom: -15px;
 }
 
 .ion-ios7-plus-empty {
-  font-size: 10em;
-  margin: -70px 0 -50px 0;
-  background: none;
-  border: none;
+  font-size: 100px;
+  margin: -35px 0 0 0;
 }
 
 //Home

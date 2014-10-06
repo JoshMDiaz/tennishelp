@@ -2869,8 +2869,8 @@ a.subdued {
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 17px;
-    line-height: 44px; }
+    font-size: 2em;
+    line-height: 40px; }
     .bar .title.title-left {
       text-align: left; }
     .bar .title.title-right {
@@ -7876,16 +7876,20 @@ ion-content {
   background-color: #99c016;
   margin: 0; }
 
+.icon.ion-gear-a, .ion-ios7-plus-empty {
+  background: none;
+  border: none;
+  padding: 0; }
+
 .icon.ion-gear-a {
   font-size: 2em;
-  margin-right: 1em;
-  color: #515151; }
+  color: #b1b3b6;
+  position: absolute;
+  bottom: 0px; }
 
 .ion-ios7-plus-empty {
-  font-size: 10em;
-  margin: -70px 0 -50px 0;
-  background: none;
-  border: none; }
+  font-size: 100px;
+  margin: -35px 0 0 0; }
 
 .homeImg {
   width: 75%; }
