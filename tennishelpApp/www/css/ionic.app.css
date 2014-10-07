@@ -2869,8 +2869,8 @@ a.subdued {
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 2em;
-    line-height: 40px; }
+    font-size: 17px;
+    line-height: 44px; }
     .bar .title.title-left {
       text-align: left; }
     .bar .title.title-right {
@@ -7819,6 +7819,9 @@ html, h1, span, ul, .item-content, .item, button {
   font-family: dosis;
   font-weight: 100; }
 
+.bar .title {
+  font-size: 2em; }
+
 img.logo {
   width: 50%;
   margin: 0 auto; }
@@ -7893,3 +7896,9 @@ ion-content {
 
 .homeImg {
   width: 75%; }
+
+.gallery img {
+  width: 150px;
+  margin: 30px 5px;
+  border: 1px #b1b3b6 solid;
+  border-radius: 5px; }

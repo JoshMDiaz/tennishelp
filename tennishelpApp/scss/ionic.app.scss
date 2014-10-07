@@ -130,7 +130,7 @@ ion-content{
   font-size: 2em;
   color: $light;
   position: absolute;
-  bottom: -15px;
+  bottom: 0px;
 }
 
 .ion-ios7-plus-empty {
@@ -141,4 +141,13 @@ ion-content{
 //Home
 .homeImg{
   width:75%;
+}
+
+
+//Video
+.gallery img{
+  width: 150px;
+  margin: 30px 5px;
+  border: 1px $light solid;
+  border-radius: 5px;
 }
