@@ -7822,6 +7822,22 @@ html, h1, span, ul, .item-content, .item, button {
 .bar .title {
   font-size: 2em; }
 
+.pageNav {
+  background-color: #515151;
+  opacity: 0.5;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  border-radius: 30px;
+  float: left; }
+
+.swipeNav {
+  padding-top: 2.5em;
+  width: 210px; }
+
+.active {
+  opacity: 1; }
+
 img.logo {
   width: 50%;
   margin: 0 auto; }
@@ -7888,7 +7904,8 @@ ion-content {
   font-size: 2em;
   color: #b1b3b6;
   position: absolute;
-  bottom: 0px; }
+  top: 125px;
+  z-index: 1; }
 
 .ion-ios7-plus-empty {
   font-size: 100px;
@@ -7898,7 +7915,7 @@ ion-content {
   width: 75%; }
 
 .gallery img {
-  width: 150px;
-  margin: 30px 5px;
+  width: 92%;
+  margin: 30px 2%;
   border: 1px #b1b3b6 solid;
   border-radius: 5px; }

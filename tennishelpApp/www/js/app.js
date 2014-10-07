@@ -88,6 +88,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.in-progress', {
+      url: 'stats/in-progress',
+      views: {
+        'in-progress': {
+          templateUrl: 'templates/in-progress.html',
+          controller: 'InProgressCtrl'
+        }
+      }
+    })
+
+    .state('tab.match-stats', {
+      url: 'stats/match-stats',
+      views: {
+        'match-stats': {
+          templateUrl: 'templates/match-stats.html',
+          controller: 'MatchStatsCtrl'
+        }
+      }
+    })
+
     .state('tab.stats', {
       url: '/stats',
       views: {

@@ -39,6 +39,25 @@ html, h1, span, ul, .item-content, .item, button{
  font-size: 2em;
 }
 
+.pageNav{
+  background-color: $dark;
+  opacity: .5;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  border-radius: 30px;
+  float: left;
+}
+
+.swipeNav{
+  padding-top: 2.5em;
+  width: 210px;
+}
+
+.active{
+  opacity: 1;
+}
+
 img.logo {
   width: 50%;
   margin: 0 auto;
@@ -130,7 +149,8 @@ ion-content{
   font-size: 2em;
   color: $light;
   position: absolute;
-  bottom: 0px;
+  top: 125px;
+  z-index: 1;
 }
 
 .ion-ios7-plus-empty {
@@ -146,8 +166,8 @@ ion-content{
 
 //Video
 .gallery img{
-  width: 150px;
-  margin: 30px 5px;
+  width: 92%;
+  margin: 30px 2%;
   border: 1px $light solid;
   border-radius: 5px;
 }

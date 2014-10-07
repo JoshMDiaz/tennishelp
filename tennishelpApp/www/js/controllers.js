@@ -17,5 +17,11 @@ angular.module('starter.controllers', [])
 .controller('ResultsCtrl', function($scope) {
 })
 
+.controller('InProgressCtrl', function($scope) {
+})
+
+.controller('MatchStatsCtrl', function($scope) {
+})
+
 .controller('VideoCtrl', function($scope) {
 });
