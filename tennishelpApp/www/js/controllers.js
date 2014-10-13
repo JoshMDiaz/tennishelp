@@ -23,5 +23,8 @@ angular.module('starter.controllers', [])
 .controller('MatchStatsCtrl', function($scope) {
 })
 
+.controller('GalleryCtrl', function($scope) {
+})
+
 .controller('VideoCtrl', function($scope) {
 });

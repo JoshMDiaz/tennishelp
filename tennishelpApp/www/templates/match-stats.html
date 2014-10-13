@@ -1,10 +1,127 @@
 <ion-view title="match stats">
   <ion-content has-header="true" class="padding">
-    <div class="row center">
-      <div>
-<h1>hi</h1>
+    <div class="row space">
+      <div class="col description">
+        receiving | serving
       </div>
+      <div class="col">
+        <label class="toggle toggle-dark">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+        </label>
+      </div>
+    </div>
+    <hr>
 
+    <div class="row space">
+      <div class="col description space">
+        1st serve
+      </div>
+      <div class="col">
+        <button name="plus" class="ion-plus button"></button>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description space">
+        2nd serve
+      </div>
+      <div class="col">
+        <button name="plus" class="ion-plus button"></button>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description space">
+        ace
+      </div>
+      <div class="col">
+        <button name="plus" class="ion-plus button"></button>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description space">
+        double fault
+      </div>
+      <div class="col">
+        <button name="plus" class="ion-plus button"></button>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description">
+        forehand
+      </div>
+      <div class="col button small">
+        winner
+      </div>
+      <div class="col button small">
+        error
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description">
+        backhand
+      </div>
+      <div class="col button small">
+        winner
+      </div>
+      <div class="col button small">
+        error
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description">
+        net points
+      </div>
+      <div class="col button small">
+        winner
+      </div>
+      <div class="col button small">
+        error
+      </div>
+    </div>
+    <hr>
+
+    <div class="row space">
+      <div class="col description">
+        break points
+      </div>
+      <div class="col button small">
+        winner
+      </div>
+      <div class="col button small">
+        error
+      </div>
+    </div>
+    <hr>
+
+
+    <div class="row">
+      <div class="center paddingTop">
+        <button name="submit" class="button undo">undo</button>
+      </div>
+    </div><!--end undo button-->
+
+
+    <!-- Page Nav -->
+    <div class="row">
+      <div class="center swipeNav">
+        <a ui-sref="tab.stats"><div class="pageNav"></div></a>
+        <div class="pageNav active"></div>
+        <a ui-sref="tab.in-progress"><div class="pageNav"></div></a>
+      </div>
     </div>
 
 

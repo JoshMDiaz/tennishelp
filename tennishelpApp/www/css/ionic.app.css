@@ -7842,6 +7842,9 @@ img.logo {
   width: 50%;
   margin: 0 auto; }
 
+.paddingTop {
+  padding-top: 1.5em; }
+
 span {
   font-size: 1.5em; }
 
@@ -7882,7 +7885,17 @@ ion-content {
   font-size: 1.5em;
   color: #99c016; }
 
-.submit, .undo {
+.description {
+  font-size: 1.3em;
+  margin-top: 0.2em; }
+
+hr {
+  opacity: 0.3; }
+
+.space {
+  margin: 1em 0; }
+
+.button {
   background-color: #515151;
   color: #FFF;
   margin: 0 auto;
@@ -7890,6 +7903,11 @@ ion-content {
   border: none;
   border-radius: 5px;
   font-size: 2em; }
+
+.small {
+  padding: 0;
+  font-size: 1.5em;
+  margin: 0 4%; }
 
 .undo {
   background-color: #99c016;
@@ -7919,3 +7937,8 @@ ion-content {
   margin: 30px 2%;
   border: 1px #b1b3b6 solid;
   border-radius: 5px; }
+
+.videoBar {
+  background: #515151;
+  color: #FFF;
+  opacity: 0.9; }

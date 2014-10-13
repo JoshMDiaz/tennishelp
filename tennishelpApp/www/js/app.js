@@ -48,16 +48,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    // .state('tab.friends', {
-    //   url: '/friends',
-    //   views: {
-    //     'tab-friends': {
-    //       templateUrl: 'templates/tab-friends.html',
-    //       controller: 'FriendsCtrl'
-    //     }
-    //   }
-    // })
-
     .state('tab.results', {
       url: '/results',
       views: {
@@ -67,16 +57,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
-    // .state('tab.friend-detail', {
-    //   url: '/friend/:friendId',
-    //   views: {
-    //     'tab-friends': {
-    //       templateUrl: 'templates/friend-detail.html',
-    //       controller: 'FriendDetailCtrl'
-    //     }
-    //   }
-    // })
 
     .state('tab.video', {
       url: '/video',
@@ -88,20 +68,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.in-progress', {
-      url: 'stats/in-progress',
+    .state('tab.video-gallery', {
+      url: '/video/gallery',
       views: {
-        'in-progress': {
+        'tab-video': {
+          templateUrl: 'templates/video-gallery.html',
+          controller: 'GalleryCtrl'
+        }
+      }
+    })
+
+    .state('tab.in-progress', {
+      url: '/stats/in-progress',
+      views: {
+        'tab-stats': {
           templateUrl: 'templates/in-progress.html',
           controller: 'InProgressCtrl'
         }
       }
     })
 
+
     .state('tab.match-stats', {
-      url: 'stats/match-stats',
+      url: '/stats/match-stats',
       views: {
-        'match-stats': {
+        'tab-stats': {
           templateUrl: 'templates/match-stats.html',
           controller: 'MatchStatsCtrl'
         }
@@ -117,6 +108,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     });
+
+    // .state('tab.friends', {
+    //   url: '/friends',
+    //   views: {
+    //     'tab-friends': {
+    //       templateUrl: 'templates/tab-friends.html',
+    //       controller: 'FriendsCtrl'
+    //     }
+    //   }
+    // })
+
+
+    // .state('tab.friend-detail', {
+    //   url: '/friend/:friendId',
+    //   views: {
+    //     'tab-friends': {
+    //       templateUrl: 'templates/friend-detail.html',
+    //       controller: 'FriendDetailCtrl'
+    //     }
+    //   }
+    // })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/home');

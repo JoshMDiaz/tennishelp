@@ -63,6 +63,10 @@ img.logo {
   margin: 0 auto;
 }
 
+.paddingTop{
+  padding-top: 1.5em;
+}
+
 span{
   font-size: 1.5em;
 }
@@ -120,11 +124,20 @@ ion-content{
   color: $positive;
 }
 
-.statResult{
-
+.description{
+  font-size: 1.3em;
+  margin-top: .2em;
 }
 
-.submit, .undo{
+hr{
+  opacity: .3;
+}
+
+.space{
+    margin: 1em 0;
+}
+
+.button{
   background-color: $dark;
   color: $stable;
   margin: 0 auto;
@@ -132,6 +145,12 @@ ion-content{
   border: none;
   border-radius: 5px;
   font-size: 2em;
+}
+
+.small{
+  padding: 0;
+  font-size: 1.5em;
+  margin: 0 4%;
 }
 
 .undo{
@@ -170,4 +189,10 @@ ion-content{
   margin: 30px 2%;
   border: 1px $light solid;
   border-radius: 5px;
+}
+
+.videoBar{
+  background: $dark;
+  color: $stable;
+  opacity: .9;
 }
