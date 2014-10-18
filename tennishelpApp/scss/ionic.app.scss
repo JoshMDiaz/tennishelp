@@ -195,4 +195,11 @@ hr{
   background: $dark;
   color: $stable;
   opacity: .9;
+  font:{
+    size: 1.5em;
+  }
+}
+
+.preview{
+  width: 50px;
 }

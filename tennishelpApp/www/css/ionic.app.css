@@ -7941,4 +7941,8 @@ hr {
 .videoBar {
   background: #515151;
   color: #FFF;
-  opacity: 0.9; }
+  opacity: 0.9;
+  font-size: 1.5em; }
+
+.preview {
+  width: 50px; }
