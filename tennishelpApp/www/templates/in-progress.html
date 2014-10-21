@@ -1,12 +1,12 @@
 <ion-view title="in progress" hide-nav-bar="true">
-  <ion-content has-header="true" class="padding">
+  <ion-content class="padding">
   <div class="list card">
 
 
     <div class="item">
       <div class="row">
           <div class="col opponent center">
-            v. david lopez
+            v. {{player2}}
           </div>
       </div>
     </div>
@@ -14,7 +14,7 @@
     <div class="item">
       <div class="row">
         <div class="col statScore center">
-          6-3, 4-2
+          {{statScore}}
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
           </div>
 
           <div class="col statResult center">
-            %
+            %{{1stServe}}
           </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
           </div>
 
           <div class="col statResult center">
-            #
+            {{aces}}
           </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="col statResult center">
-            #
+            {{doubleFaults}}
           </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
           </div>
 
           <div class="col statResult center">
-            #
+            {{errors}}
           </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
           </div>
 
           <div class="col statResult center">
-            %
+            %{{1stServeWinning}}
           </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
           </div>
 
           <div class="col statResult center">
-            %
+            %{{2ndServeWinning}}
           </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
           </div>
 
           <div class="col statResult center">
-            #
+            {{winners}}
           </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
           </div>
 
           <div class="col statResult center">
-            %
+            %{{receiving}}
           </div>
       </div>
     </div>
@@ -122,7 +122,7 @@
           </div>
 
           <div class="col statResult center">
-            # of # = %
+            {{breaksConverted}} of {{breakChances}} = %{{breakPercentage}}
           </div>
       </div>
     </div>
@@ -134,7 +134,7 @@
           </div>
 
           <div class="col statResult center">
-            # of # = %
+            {{netConverted}} of {{netChances}} = %{{netPercentage}}
           </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
           </div>
 
           <div class="col statResult center">
-            #
+            {{totalPoints}}
           </div>
       </div>
     </div>
