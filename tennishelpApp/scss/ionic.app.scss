@@ -178,8 +178,11 @@ hr{
 }
 
 //Home
-.homeImg{
-  width:75%;
+// ion-content.homeScreen{
+//   background: url('/img/home1.png') no-repeat fixed center;
+// }
+img.homeImg {
+  height: 500px;
 }
 
 
@@ -198,8 +201,11 @@ hr{
   font:{
     size: 1.5em;
   }
+  z-index: 100;
+  position: absolute;
+  bottom: -415px;
 }
 
 .preview{
-  width: 50px;
+  width: 25px;
 }

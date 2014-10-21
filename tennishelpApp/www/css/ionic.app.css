@@ -7929,8 +7929,8 @@ hr {
   font-size: 100px;
   margin: -35px 0 0 0; }
 
-.homeImg {
-  width: 75%; }
+img.homeImg {
+  height: 500px; }
 
 .gallery img {
   width: 92%;
@@ -7942,7 +7942,10 @@ hr {
   background: #515151;
   color: #FFF;
   opacity: 0.9;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  z-index: 100;
+  position: absolute;
+  bottom: -415px; }
 
 .preview {
-  width: 50px; }
+  width: 25px; }
