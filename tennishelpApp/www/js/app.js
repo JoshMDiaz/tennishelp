@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.settings', {
+      url: '/stats/settings',
+      views: {
+        'tab-stats': {
+          templateUrl: 'templates/settings.html',
+          controller: 'SettingsCtrl'
+        }
+      }
+    })
+
     .state('tab.results', {
       url: '/results',
       views: {

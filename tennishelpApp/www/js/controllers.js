@@ -26,5 +26,8 @@ angular.module('starter.controllers', [])
 .controller('GalleryCtrl', function($scope) {
 })
 
+.controller('SettingsCtrl', function($scope) {
+})
+
 .controller('VideoCtrl', function($scope) {
 });
