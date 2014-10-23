@@ -3179,7 +3179,7 @@ a.subdued {
   width: 100%;
   height: 49px;
   border-style: solid;
-  border-top-width: 1px;
+  border-top-width: 5px;
   background-size: 0;
   line-height: 49px; }
   .tabs .tab-item .badge {
@@ -3187,8 +3187,6 @@ a.subdued {
     color: #FFF; }
   @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .tabs {
-      padding-top: 2px;
-      border-top: none !important;
       border-bottom: none;
       background-position: top;
       background-size: 100% 1px;
@@ -7815,18 +7813,144 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
-html, h1, span, ul, .item-content {
+html, h1, span, ul, .item-content, .item, button {
   font-family: dosis;
-  font-weight: 100;
-  color: #515151; }
+  font-weight: 100; }
+
+.bar .title {
+  font-size: 2em; }
+
+.nav-title-slide-ios:not(.no-animation) .button.back-button, .nav-title-slide-ios7:not(.no-animation) .button.back-button {
+  margin: 0; }
+
+.pageNav {
+  background-color: #515151;
+  opacity: 0.5;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  border-radius: 30px;
+  float: left; }
+
+.swipeNav {
+  padding-top: 2.5em;
+  width: 210px; }
+
+.active {
+  opacity: 1; }
 
 img.logo {
   width: 50%;
   margin: 0 auto; }
 
+.paddingTop {
+  padding-top: 1.5em; }
+
 span {
-  font-size: 1.3em; }
+  font-size: 1.5em; }
+
+.tabs {
+  border-top: 5px #b1b3b6 solid;
+  line-height: 40px; }
 
 .tab-item-active {
   color: #FFF;
   background-color: #b1b3b6; }
+
+ion-content {
+  background: #FFF; }
+
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.item, .item-divider {
+  background-color: #FFF;
+  color: #515151;
+  padding: 0; }
+
+.col {
+  padding: 10px 5px; }
+
+.col-67, .col-20 {
+  border-right: #b1b3b6 solid 1px; }
+
+.row {
+  padding: 0; }
+
+.opponent {
+  font-size: 2em;
+  color: #515151; }
+
+.statScore {
+  font-size: 1.5em;
+  color: #99c016; }
+
+.description {
+  font-size: 1.1em;
+  margin-top: 0.2em; }
+
+hr {
+  opacity: 0.3; }
+
+.space {
+  margin: 1em 0; }
+
+.button {
+  background-color: #515151;
+  color: #FFF;
+  margin: 0 auto;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 2em; }
+
+.small {
+  padding: 0;
+  font-size: 1.5em;
+  margin: 0 4%; }
+
+.undo {
+  background-color: #99c016;
+  margin: 0; }
+
+.icon.ion-gear-a, .ion-ios7-plus-empty {
+  background: none;
+  border: none;
+  padding: 0; }
+
+.icon.ion-gear-a {
+  font-size: 2em;
+  color: #b1b3b6;
+  position: absolute;
+  top: 125px;
+  z-index: 1; }
+
+.ion-ios7-plus-empty {
+  font-size: 100px;
+  margin: -35px 0 0 0; }
+
+img.homeImg {
+  height: 500px; }
+
+.gallery img {
+  width: 92%;
+  margin: 30px 2%;
+  border: 1px #b1b3b6 solid;
+  border-radius: 5px; }
+
+.videoBar {
+  background: #515151;
+  color: #FFF;
+  opacity: 0.9;
+  font-size: 1.5em;
+  z-index: 100;
+  position: absolute;
+  bottom: -415px; }
+
+.preview {
+  width: 25px; }
+
+img.record {
+  width: 80px;
+  margin-top: -3px; }

@@ -1,0 +1,119 @@
+<ion-view title="match score" hide-nav-bar="true">
+  <ion-content class="padding">
+
+      <div class="list card">
+
+
+        <div class="item">
+          <div class="row">
+              <div class="col col-20 center">
+                player
+              </div>
+              <div class="col col-20 center">
+                set 1
+              </div>
+              <div class="col col-20 center">
+                set 2
+              </div>
+              <div class="col col-20 center">
+                set 3
+              </div>
+              <div class="col col-20 center">
+                points
+              </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+              <div class="col col-20 center">
+                {{player1}}
+              </div>
+              <div class="col col-20 center">
+                {{player1_set1}}
+              </div>
+              <div class="col col-20 center">
+                {{player1_set2}}
+              </div>
+              <div class="col col-20 center">
+                {{player1_set3}}
+              </div>
+              <div class="col col-20 center">
+                {{player1_point}}
+              </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+              <div class="col col-20 center">
+                {{player2}}
+              </div>
+              <div class="col col-20 center">
+                {{player2_set1}}
+              </div>
+              <div class="col col-20 center">
+                {{player2_set2}}
+              </div>
+              <div class="col col-20 center">
+                {{player2_set3}}
+              </div>
+              <div class="col col-20 center">
+                {{player2_point}}
+              </div>
+          </div>
+        </div>
+
+      </div><!--end list-->
+
+      <!--Players-->
+    <div class="row center">
+      <div class="col col-50">
+        <h1>{{player1}}</h1>
+      </div>
+
+      <div class="col col-50">
+        <h1>{{player2}}</h1>
+      </div>
+    </div>
+
+
+    <div class="row center">
+      <div class="col col-50">
+        <button name="addPoint1" class="ion-ios7-plus-empty"></button>
+      </div>
+
+      <div class="col col-50">
+        <button name="addPoint2" class="ion-ios7-plus-empty"></button>
+      </div>
+    </div>
+
+
+
+      <!--end Players-->
+
+      <div class="row">
+        <div class="center">
+          <button name="submit" class="button undo">undo</button>
+        </div>
+      </div><!--end undo button-->
+
+
+ <a ui-sref="tab.settings"><button name="settingsStats" class="icon ion-gear-a"></button></a>
+
+
+
+      <!-- Page Nav -->
+      <div class="row">
+        <div class="center swipeNav">
+          <div class="pageNav active"></div>
+          <a ui-sref="tab.match-stats"><div class="pageNav"></div></a>
+          <a ui-sref="tab.in-progress"><div class="pageNav"></div></a>
+        </div>
+      </div>
+
+
+
+
+  </ion-content>
+</ion-view>

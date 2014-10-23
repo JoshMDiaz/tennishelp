@@ -38,47 +38,109 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     // Each tab has its own nav history stack:
 
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.home', {
+      url: '/home',
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
+        'tab-home': {
+          templateUrl: 'templates/tab-home.html',
+          controller: 'HomeCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.settings', {
+      url: '/stats/settings',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-stats': {
+          templateUrl: 'templates/settings.html',
+          controller: 'SettingsCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.results', {
+      url: '/results',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'tab-results': {
+          templateUrl: 'templates/tab-results.html',
+          controller: 'ResultsCtrl'
+        }
+      }
+    })
+
+    .state('tab.video', {
+      url: '/video',
+      views: {
+        'tab-video': {
+          templateUrl: 'templates/tab-video.html',
+          controller: 'VideoCtrl'
+        }
+      }
+    })
+
+    .state('tab.video-gallery', {
+      url: '/video/gallery',
+      views: {
+        'tab-video': {
+          templateUrl: 'templates/video-gallery.html',
+          controller: 'GalleryCtrl'
+        }
+      }
+    })
+
+    .state('tab.in-progress', {
+      url: '/stats/in-progress',
+      views: {
+        'tab-stats': {
+          templateUrl: 'templates/in-progress.html',
+          controller: 'InProgressCtrl'
+        }
+      }
+    })
+
+
+    .state('tab.match-stats', {
+      url: '/stats/match-stats',
+      views: {
+        'tab-stats': {
+          templateUrl: 'templates/match-stats.html',
+          controller: 'MatchStatsCtrl'
+        }
+      }
+    })
+
+    .state('tab.stats', {
+      url: '/stats',
+      views: {
+        'tab-stats': {
+          templateUrl: 'templates/tab-stats.html',
+          controller: 'StatsCtrl'
         }
       }
     });
 
+    // .state('tab.friends', {
+    //   url: '/friends',
+    //   views: {
+    //     'tab-friends': {
+    //       templateUrl: 'templates/tab-friends.html',
+    //       controller: 'FriendsCtrl'
+    //     }
+    //   }
+    // })
+
+
+    // .state('tab.friend-detail', {
+    //   url: '/friend/:friendId',
+    //   views: {
+    //     'tab-friends': {
+    //       templateUrl: 'templates/friend-detail.html',
+    //       controller: 'FriendDetailCtrl'
+    //     }
+    //   }
+    // })
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/home');
 
 });
-
