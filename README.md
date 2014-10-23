@@ -10,12 +10,16 @@
 
     git clone https://github.com/JoshMDiaz/tennishelp.git
 
-3) Run npm install
+3) Navigate to and change your directory to the tennishelpApp/ folder.
+
+    cd /yourFolder/tennishelp/tennishelpApp/
+
+4) Run npm install
 
     npm install
 
-4) Make sure you do not have anything currently running on http://localhost:8100 and run ionic serve
+5) Make sure you do not have anything currently running on http://localhost:8100 and run ionic serve
 
     ionic serve
 
-5) Enjoy!
+6) Enjoy!
