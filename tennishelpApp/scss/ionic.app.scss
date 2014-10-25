@@ -78,6 +78,8 @@ span{
 .tabs{
   border-top: 5px $light solid;
   line-height: 40px;
+  border-top-width: 5px;
+  padding-top: 0px;
 }
 
 .tab-item-active{
@@ -172,7 +174,7 @@ hr{
   font-size: 2em;
   color: $light;
   position: absolute;
-  top: 125px;
+  top: 255px;
   z-index: 1;
 }
 
@@ -212,4 +214,9 @@ img.homeImg {
 
 .preview{
   width: 25px;
+}
+
+img.record {
+width: 80px;
+margin-top: -3px;
 }
