@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('tennishelp.controllers', [])
 
 .controller('HomeCtrl', function($scope) {
 })
@@ -12,6 +12,7 @@ angular.module('starter.controllers', [])
 // })
 
 .controller('StatsCtrl', function($scope) {
+  
 })
 
 .controller('ResultsCtrl', function($scope) {
