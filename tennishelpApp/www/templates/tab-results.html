@@ -4,7 +4,20 @@
       <ion-list class="list card">
 
         <ion-item ng-repeat="player in players" type="item-text-wrap" href="#/tab/player/{{player.id}}">
-          <span class="positive">{{"v. " + " "}}</span> <span class="dark">{{ player.name }}</span>
+
+          <div class="row">
+              <div class="col col-10">
+                <span class="positive">{{player.result}}</span>
+              </div>
+
+              <div class="col col-10 text-left">
+                <span class="dark">{{ player.name }}</span>
+              </div>
+
+          <div class="col text-right">
+            <span class="light">{{ player.score }}</span>
+          </div>
+        </div>
         </ion-item>
 
       </ion-list>
