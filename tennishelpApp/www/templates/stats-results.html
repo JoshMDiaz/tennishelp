@@ -7,7 +7,7 @@
         <div class="item">
           <div class="row">
               <div class="col opponent center">
-                <span class="positive">v. </span> <span class="dark">{{ player.name }}</span>
+                <span class="dark">{{player.result}}</span> <span class="positive"> {{ " v. " }} </span> <span class="dark">{{ player.name }}</span>
               </div>
           </div>
         </div>
@@ -15,7 +15,7 @@
         <div class="item">
           <div class="row">
             <div class="col statScore center">
-              6-3, 6-2
+              {{ player.score }}
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
               </div>
 
               <div class="col statResult center">
-                58%
+                {{player.firstServe}}%
               </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
               </div>
 
               <div class="col statResult center">
-                1
+                {{player.aces}}
               </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
               </div>
 
               <div class="col statResult center">
-                1
+                {{player.doubleFaults}}
               </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
               </div>
 
               <div class="col statResult center">
-                7
+                {{player.unforcedErrors}}
               </div>
           </div>
         </div>
@@ -71,11 +71,11 @@
         <div class="item">
           <div class="row">
               <div class="col col-67">
-                winnig % on 1st serve
+                winning % on 1st serve
               </div>
 
               <div class="col statResult center">
-                81%
+                {{player.winOnFirst}}%
               </div>
           </div>
         </div>
@@ -83,11 +83,11 @@
         <div class="item">
           <div class="row">
               <div class="col col-67">
-                winnig % on 2nd serve
+                winning % on 2nd serve
               </div>
 
               <div class="col statResult center">
-                46%
+                {{player.winOnSecond}}%
               </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
               </div>
 
               <div class="col statResult center">
-                8
+                {{player.winners}}
               </div>
           </div>
         </div>
@@ -111,7 +111,7 @@
               </div>
 
               <div class="col statResult center">
-                57%
+                {{player.receiving}}%
               </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
               </div>
 
               <div class="col statResult center">
-                O of 3 = O%
+                {{player.breakPoints}}%
               </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
               </div>
 
               <div class="col statResult center">
-                7 of 8 = 88%
+                {{player.net}}%
               </div>
           </div>
         </div>
@@ -147,18 +147,13 @@
               </div>
 
               <div class="col statResult center">
-                25
+                {{player.totalPoints}}
               </div>
           </div>
         </div>
 
 
       </div><!--end list-->
-
-
-      <div class="row">
-        <button name="submit" class="submit">submit</button>
-      </div><!--end submit button-->
 
 
 

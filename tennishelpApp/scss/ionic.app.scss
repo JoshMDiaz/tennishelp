@@ -71,7 +71,7 @@ img.logo {
   padding-top: 1.5em;
 }
 
-span{
+span.tab-title{
   font-size: 1.5em;
 }
 
@@ -133,6 +133,11 @@ ion-content{
 .description{
   font-size: 1.1em;
   margin-top: .2em;
+}
+
+span.description{
+  margin: 0;
+  font-size: 1.4em;
 }
 
 hr{
