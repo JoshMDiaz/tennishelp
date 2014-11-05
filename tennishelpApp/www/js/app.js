@@ -109,6 +109,16 @@ angular.module('tennishelp', ['ionic', 'tennishelp.controllers', 'tennishelp.ser
       }
     })
 
+    .state('tab.stats-results', {
+      url: '/player/:playerId',
+      views: {
+        'tab-results': {
+          templateUrl: 'templates/stats-results.html',
+          controller: 'StatsResultsCtrl'
+        }
+      }
+    })
+
     .state('tab.stats', {
       url: '/stats',
       views: {

@@ -3,8 +3,8 @@
 
       <ion-list class="list card">
 
-        <ion-item ng-repeat="opponent in opponents" type="item-text-wrap" href="#/tab/results/{{opponent.id}}">
-          v. {{player2}}
+        <ion-item ng-repeat="player in players" type="item-text-wrap" href="#/tab/player/{{player.id}}">
+          <span class="positive">{{"v. " + " "}}</span> <span class="dark">{{ player.name }}</span>
         </ion-item>
 
       </ion-list>
