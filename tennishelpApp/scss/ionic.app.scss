@@ -42,6 +42,7 @@ html, h1, span, ul, .item-content, .item, button{
 .nav-title-slide-ios:not(.no-animation) .button.back-button, .nav-title-slide-ios7:not(.no-animation) .button.back-button {
   margin: 0;
 }
+
 .pageNav{
   background-color: $dark;
   opacity: .5;
@@ -70,13 +71,15 @@ img.logo {
   padding-top: 1.5em;
 }
 
-span{
+span.tab-title{
   font-size: 1.5em;
 }
 
 .tabs{
   border-top: 5px $light solid;
   line-height: 40px;
+  border-top-width: 5px;
+  padding-top: 0px;
 }
 
 .tab-item-active{
@@ -132,6 +135,11 @@ ion-content{
   margin-top: .2em;
 }
 
+span.description{
+  margin: 0;
+  font-size: 1.4em;
+}
+
 hr{
   opacity: .3;
 }
@@ -171,7 +179,7 @@ hr{
   font-size: 2em;
   color: $light;
   position: absolute;
-  top: 125px;
+  top: 155px;
   z-index: 1;
 }
 

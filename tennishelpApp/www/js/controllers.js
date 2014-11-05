@@ -1,23 +1,32 @@
-angular.module('starter.controllers', [])
+angular.module('tennishelp.controllers', [])
 
 .controller('HomeCtrl', function($scope) {
 })
 
-// .controller('FriendsCtrl', function($scope, Friends) {
-//   $scope.friends = Friends.all();
-// })
-//
-// .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-//   $scope.friend = Friends.get($stateParams.friendId);
-// })
-
 .controller('StatsCtrl', function($scope) {
+
 })
 
-.controller('ResultsCtrl', function($scope) {
+
+
+
+
+
+.controller('ResultsCtrl', function($scope, Players) {
+  $scope.players = Players.all();
 })
+
+.controller('StatsResultsCtrl', function($scope, $stateParams, Players) {
+  $scope.player = Players.get($stateParams.playerId);
+})
+
+
+
+
+
 
 .controller('InProgressCtrl', function($scope) {
+
 })
 
 .controller('MatchStatsCtrl', function($scope) {

@@ -1,128 +1,25 @@
 <ion-view title="saved results">
   <ion-content class="padding">
 
-      <div class="list card">
+      <ion-list class="list card">
 
-        <ion-item ng-repeat="opponent in opponents" type="item-text-wrap" href="#/tab/results/{{opponent.id}}">
-          {{result}} v. {{player2}}
-        </ion-item>
+        <ion-item ng-repeat="player in players" type="item-text-wrap" href="#/tab/player/{{player.id}}">
 
-      <div class="item">
           <div class="row">
-              <div class="col col-67">
-                <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
+              <div class="col col-10">
+                <span class="positive description">{{player.result}}</span>
               </div>
 
-              <div class="col statResult center">
-                {{date}}
+              <div class="col col-10">
+                <span class="dark description">{{ player.name }}</span>
               </div>
+
+          <div class="col text-right">
+            <span class="light description">{{ player.score }}</span>
           </div>
         </div>
+        </ion-item>
 
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col col-67">
-                  <span class="positive">{{result}} </span> v. <span> {{player2}}</span>
-                </div>
-
-                <div class="col statResult center">
-                  {{date}}
-                </div>
-            </div>
-          </div>
-
-
-      </div><!--end list-->
-
-
-
-
-
-
-
+      </ion-list>
   </ion-content>
 </ion-view>
