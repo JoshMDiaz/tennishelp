@@ -39,4 +39,11 @@ angular.module('tennishelp.controllers', [])
 })
 
 .controller('VideoCtrl', function($scope) {
+
+// $scope.getPhoto = function() {
+//     Camera.getPicture().then(function(imageURI) {
+//       console.log(imageURI);
+//     }, function(err) {
+//       console.err(err);
+//     });
 });
