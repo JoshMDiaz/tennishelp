@@ -32,8 +32,14 @@ angular.module('tennishelp.controllers', [])
 .controller('MatchStatsCtrl', function($scope) {
 })
 
-.controller('GalleryCtrl', function($scope) {
+.controller('GalleryCtrl', function($scope, Videos) {
+  $scope.players = Players.all();
 })
+
+// .controller('PlayVideoCtrl', function($scope, $stateParams, Videos) {
+//   $scope.video = Videos.get($stateParams.videoId);
+// });
+
 
 .controller('SettingsCtrl', function($scope) {
 })

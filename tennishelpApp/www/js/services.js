@@ -39,3 +39,35 @@ angular.module("tennishelp.services", [])
     }
   }
 });
+
+
+
+// .factory("Videos", function() {
+//   // Might use a resource here that returns a JSON array
+//
+//   var videos = [
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" },
+//
+//     { id: 0, name: "Michael Smith" }
+//   ];
+//
+//   return {
+//     all: function() {
+//       return videos;
+//     },
+//     get: function(videoId) {
+//       // Simple index lookup
+//       return videos[videoId];
+//     }
+//   }
+// });

@@ -1,6 +1,22 @@
 <ion-view title="video gallery">
   <ion-content class="padding">
 
+
+    <ion-item ng-repeat="video in videos" type="item-text-wrap" href="#/tab/video/{{video.id}}">
+
+
+    </ion-item>
+    <div class="row center">
+      <div class="col col-50 gallery">
+        {{video.name}}
+      </div>
+
+      <div class="col col-50 gallery">
+        {{video.name}}
+      </div>
+    </div>
+
+<!--
     <div class="row center">
       <div class="col col-50 gallery">
         <img src="img/cat.png"/>
@@ -31,18 +47,7 @@
       <div class="col col-50 gallery">
         <img src="img/cat.png"/>
       </div>
-    </div>
-
-
-    <div class="row center">
-      <div class="col col-50 gallery">
-        <img src="img/cat.png"/>
-      </div>
-
-      <div class="col col-50 gallery">
-        <img src="img/cat.png"/>
-      </div>
-    </div>
+    </div> -->
 
 
   </ion-content>

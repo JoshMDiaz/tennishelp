@@ -79,7 +79,7 @@ angular.module('tennishelp', ['ionic', 'tennishelp.controllers', 'tennishelp.ser
     })
 
     .state('tab.video-gallery', {
-      url: '/video/gallery',
+      url: '/video/:videoId',
       views: {
         'tab-video': {
           templateUrl: 'templates/video-gallery.html',
