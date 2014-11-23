@@ -4,7 +4,9 @@ angular.module('tennishelp.controllers', [])
 })
 
 .controller('StatsCtrl', function($scope) {
-
+  $scope.myScore = function() {
+    alert('It Works!');
+  };
 })
 
 
