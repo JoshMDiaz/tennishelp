@@ -5,7 +5,7 @@
         receiving | serving
       </div>
       <div class="col">
-        <label class="toggle toggle-dark">
+        <label class="toggle toggle-dark" ng-click="switch()">
            <input type="checkbox">
            <div class="track">
              <div class="handle"></div>
@@ -20,7 +20,7 @@
         1st serve
       </div>
       <div class="col">
-        <button name="plus" class="ion-plus button"></button>
+        <button name="plus" class="ion-plus button" ng-click="firstServe()"></button>
       </div>
     </div>
     <hr>
@@ -30,7 +30,7 @@
         2nd serve
       </div>
       <div class="col">
-        <button name="plus" class="ion-plus button"></button>
+        <button name="plus" class="ion-plus button" ng-click="secondServe()"></button>
       </div>
     </div>
     <hr>
@@ -40,7 +40,7 @@
         ace
       </div>
       <div class="col">
-        <button name="plus" class="ion-plus button"></button>
+        <button name="plus" class="ion-plus button" ng-click="ace()"></button>
       </div>
     </div>
     <hr>
@@ -50,7 +50,7 @@
         double fault
       </div>
       <div class="col">
-        <button name="plus" class="ion-plus button"></button>
+        <button name="plus" class="ion-plus button" ng-click="doubleFault()"></button>
       </div>
     </div>
     <hr>
@@ -59,10 +59,10 @@
       <div class="col description">
         forehand
       </div>
-      <div class="col button small">
+      <div class="col button small" ng-click="forehandWinner()">
         winner
       </div>
-      <div class="col button small">
+      <div class="col button small" ng-click="forehandError()">
         error
       </div>
     </div>
@@ -72,12 +72,12 @@
       <div class="col description">
         backhand
       </div>
-      <div class="col button small">
+      <button class="col button small" ng-click="backhandWinner()">
         winner
-      </div>
-      <div class="col button small">
+      </button>
+      <button class="col button small" ng-click="backhandError()">
         error
-      </div>
+      </button>
     </div>
     <hr>
 
@@ -85,12 +85,12 @@
       <div class="col description">
         net points
       </div>
-      <div class="col button small">
+      <button class="col button small" ng-click="netWinner()">
         winner
-      </div>
-      <div class="col button small">
+      </button>
+      <button class="col button small" ng-click="netError()">
         error
-      </div>
+      </button>
     </div>
     <hr>
 
@@ -98,19 +98,19 @@
       <div class="col description">
         break points
       </div>
-      <div class="col button small">
-        winner
-      </div>
-      <div class="col button small">
-        error
-      </div>
+      <button class="col button small" ng-click="breakWin()">
+        won
+      </button>
+      <button class="col button small" ng-click="breakLose()">
+        lost
+      </button>
     </div>
     <hr>
 
 
     <div class="row">
       <div class="center paddingTop">
-        <button name="submit" class="button undo">undo</button>
+        <button name="submit" class="button undo" ng-click="undo()">undo</button>
       </div>
     </div><!--end undo button-->
 

@@ -5,7 +5,15 @@ angular.module('tennishelp.controllers', [])
 
 .controller('StatsCtrl', function($scope) {
   $scope.myScore = function() {
-    alert('It Works!');
+    alert('Player 1');
+  };
+
+  $scope.opponentScore = function() {
+    alert('Player 2');
+  };
+
+  $scope.undo = function() {
+    alert('Undo');
   };
 })
 
@@ -28,10 +36,69 @@ angular.module('tennishelp.controllers', [])
 
 
 .controller('InProgressCtrl', function($scope) {
+  $scope.submit = function() {
+    alert('submit');
+  };
 
 })
 
 .controller('MatchStatsCtrl', function($scope) {
+  $scope.switch = function() {
+    alert('Switch');
+  };
+
+  $scope.firstServe = function() {
+    alert('First Serve');
+  };
+
+  $scope.secondServe = function() {
+    alert('Second Serve');
+  };
+
+  $scope.ace = function() {
+    alert('Ace');
+  };
+
+  $scope.doubleFault = function() {
+    alert('Double Fault');
+  };
+
+  $scope.forehandWinner = function() {
+    alert('forehandWinner');
+  };
+
+  $scope.forehandError = function() {
+    alert('forehandError');
+  };
+
+  $scope.backhandWinner = function() {
+    alert('backhandWinner');
+  };
+
+  $scope.backhandError = function() {
+    alert('backhandError');
+  };
+
+  $scope.netWinner = function() {
+    alert('netWinner');
+  };
+
+  $scope.netError = function() {
+    alert('netError');
+  };
+
+  $scope.breakWin = function() {
+    alert('breakWin');
+  };
+
+  $scope.breakLose = function() {
+    alert('breakLose');
+  };
+
+  $scope.undo = function() {
+    alert('Undo');
+  };
+
 })
 
 .controller('GalleryCtrl', function($scope, Videos) {

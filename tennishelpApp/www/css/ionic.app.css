@@ -7913,6 +7913,9 @@ hr {
   border-radius: 5px;
   font-size: 2em; }
 
+input {
+  border-radius: 5px; }
+
 .small {
   padding: 0;
   font-size: 1.5em;
