@@ -64,35 +64,35 @@ angular.module('tennishelp.controllers', [])
   };
 
   $scope.forehandWinner = function() {
-    alert('forehandWinner');
+    alert('Forehand Winner');
   };
 
   $scope.forehandError = function() {
-    alert('forehandError');
+    alert('Forehand Error');
   };
 
   $scope.backhandWinner = function() {
-    alert('backhandWinner');
+    alert('Backhand Winner');
   };
 
   $scope.backhandError = function() {
-    alert('backhandError');
+    alert('Backhand Error');
   };
 
   $scope.netWinner = function() {
-    alert('netWinner');
+    alert('Net Winner');
   };
 
   $scope.netError = function() {
-    alert('netError');
+    alert('Net Error');
   };
 
   $scope.breakWin = function() {
-    alert('breakWin');
+    alert('Break Point Win');
   };
 
   $scope.breakLose = function() {
-    alert('breakLose');
+    alert('Break Point Lose');
   };
 
   $scope.undo = function() {
