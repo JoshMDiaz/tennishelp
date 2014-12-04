@@ -4,16 +4,25 @@ angular.module('tennishelp.controllers', [])
 })
 
 .controller('StatsCtrl', function($scope) {
+  var point = 15;
+  $scope.pointValue = point;
+
+  var opponentPoint = 15;
+  $scope.opponentPointValue = opponentPoint;
+
   $scope.myScore = function() {
-    alert('Player 1');
+    $scope.point = point++;
+    return $scope.point;
   };
 
   $scope.opponentScore = function() {
-    alert('Player 2');
+    $scope.opponentPoint = opponentPoint++;
+    return $scope.opponentPoint;
   };
 
   $scope.undo = function() {
-    alert('Undo');
+    $scope.point = point--;
+    return $scope.point;
   };
 })
 
