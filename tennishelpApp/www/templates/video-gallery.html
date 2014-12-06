@@ -1,12 +1,30 @@
-<!-- <ion-view title="video gallery">
+<ion-view title="video gallery">
   <ion-content class="padding">
 
 
-    <ion-item ng-repeat="video in videos" type="item-text-wrap" href="#/tab/video/{{video.id}}">
+    <!-- <ion-item ng-repeat="video in videos" type="item-text-wrap" href="#/tab/video/{{video.id}}">
 
 
-    </ion-item>
-    <div class="row center">
+    </ion-item> -->
+
+    <ion-list class="gallery">
+
+      <ion-item ng-repeat="player in players" type="item-text-wrap" href="#/tab/player/{{player.id}}">
+
+        <div class="row center padding">
+          <div class="col col-50">
+            <span class=""><img ng-src="{{player.image}}" alt="" /></span>
+          </div>
+
+          <div class="col col-50">
+            <span class=""><img ng-src="{{ player.image }}" alt="" /></span>
+          </div>
+        </div>
+      </ion-item>
+
+    </ion-list>
+
+    <!-- <div class="row center">
       <div class="col col-50 gallery">
         {{video.name}}
       </div>
@@ -14,10 +32,10 @@
       <div class="col col-50 gallery">
         {{video.name}}
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="row center">
+    <!-- <div class="row center">
       <div class="col col-50 gallery">
         <img src="img/cat.png"/>
       </div>
@@ -47,8 +65,8 @@
       <div class="col col-50 gallery">
         <img src="img/cat.png"/>
       </div>
-    </div>
+    </div> -->
 
 
   </ion-content>
-</ion-view> -->
+</ion-view>

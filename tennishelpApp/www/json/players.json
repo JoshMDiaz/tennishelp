@@ -1,3 +1,7 @@
+/*I cannot figure out how to use this json data instead of the data that I have stored in the services.js*/
+
+/*I put in a lot of time trying to get this to work*/
+
 [
   { "id": "0", "name": "Michael Smith", "score": "6-1, 6-2", "result": "W", "firstServe": "58", "aces": "5", "doubleFaults": "1", "unforcedErrors": "7", "winOnFirst": "81", "winOnSecond": "66", "winners": "8", "receiving": "87", "breakPoints": "5 of 6 = 83", "net": "7 of 8 = 88", "totalPoints": "25" },
 

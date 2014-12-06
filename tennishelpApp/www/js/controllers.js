@@ -4,10 +4,10 @@ angular.module('tennishelp.controllers', [])
 })
 
 .controller('StatsCtrl', function($scope) {
-  var point = 15;
+  var point = 1;
   $scope.pointValue = point;
 
-  var opponentPoint = 15;
+  var opponentPoint = 1;
   $scope.opponentPointValue = opponentPoint;
 
   $scope.myScore = function() {
@@ -20,10 +20,18 @@ angular.module('tennishelp.controllers', [])
     return $scope.opponentPoint;
   };
 
-  $scope.undo = function() {
-    $scope.point = point--;
-    return $scope.point;
-  };
+  // $scope.undo = function() {
+  //   $scope.point = point--;
+  //   return $scope.point;
+  // };
+
+
+
+
+
+
+
+
 })
 
 
@@ -110,7 +118,7 @@ angular.module('tennishelp.controllers', [])
 
 })
 
-.controller('GalleryCtrl', function($scope, Videos) {
+.controller('GalleryCtrl', function($scope, Players) {
   $scope.players = Players.all();
 })
 
@@ -123,4 +131,5 @@ angular.module('tennishelp.controllers', [])
 })
 
 .controller('VideoCtrl', function($scope) {
+
 });
