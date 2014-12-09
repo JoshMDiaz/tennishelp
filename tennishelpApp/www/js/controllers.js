@@ -128,6 +128,12 @@ angular.module('tennishelp.controllers', [])
 
 
 .controller('SettingsCtrl', function($scope) {
+  this.name = {};
+  
+  this.addPlayer = function(players){
+    players.names.push(this.name);
+  };
+
 })
 
 .controller('VideoCtrl', function($scope) {

@@ -1,24 +1,27 @@
 <ion-view title="player names" hide-nav-bar="">
   <ion-content class="padding homeScreen">
-    <div class="row center">
-      <div class="col-33 col">
-        your name:
+    <form id="playerNames" action="index.html" method="post" ng-controller="SettingsCtrl as settingsCtrl" ng-submit="settingsCtrl.addPlayer(players)">
+      <div class="row center">
+        <div class="col-33 col">
+          your name:
+        </div>
+
+        <div class="col-66 col">
+          <input name="player1" value="" placeholder="">
+        </div>
       </div>
 
-      <div class="col-66 col">
-         <input name="player1" value="" placeholder="">
+      <div class="row center">
+        <div class="col-33 col">
+          opponent:
+        </div>
+
+        <div class="col-66 col">
+          <input name="player2" value="" placeholder="">
+        </div>
       </div>
-    </div>
 
-    <div class="row center">
-    <div class="col-33 col">
-      opponent:
-    </div>
-
-    <div class="col-66 col">
-       <input name="player2" value="" placeholder="">
-    </div>
-  </div>
+    </form>
 
 
   </ion-content>
